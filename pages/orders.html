@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orders</title>
+    <title>Rendelés</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/colors.css">
 </head>
@@ -14,16 +14,67 @@
         <ul>
             <li><a href="/index.html">Főoldal</a></li>
             <li><a href="/pages/products.html">Ételek</a></li>
-            <li><a href="/pages/orders.html">Rendelések</a></li>
-            <li><a href="/about.html">Rólunk</a></li>  
+            <li><a href="/pages/orders.html">Rendelés</a></li>
+            <li><a href="/about.html">Rólunk</a></li>
         </ul>
     </div>
-    
-<div class="main-content">
 
-    <h1>Rendelések</h1>
+    <h1>Rendelés</h1>
 
-</div>
+    <div class="container">
+        <form>
+        <fieldset>
+            <legend>Személyes adatok</legend>
+            <div>
+                <label for="name">Név:</label>
+                <input id="name" name="name" type="text" required>
+            </div>
+            <div>
+                <label for="email">Email cím:</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div>
+                <label for="address">Cím:</label>
+                <input id="address" name="address" type="text" required>
+            </div>
+            <div>
+                <label for="comment">Megjegyzés:</label>
+                <textarea id="comment" name="comment" rows="5"></textarea>
+            </fieldset>
+            </div>
+            <fieldset>
+       
+            <legend>Termék adatai</legend>
+            <span>Extra feltét</span>
+            <div> 
+                <input id="cheese" name="extra" type="radio" value="0">
+                <label for="cheese">Sajt</label>
+            </div>
+            <div> 
+                <input id="double-cheese" name="extra" type="radio" value="0">
+                <label for="double-cheese">Dupla sajt</label>
+            </div>
+            <div> 
+                <input id="double-meat" name="extra" type="radio" value="0">
+                <label for="double-meat">Dupla hús</label>
+            </div>
+            <div> 
+                <input id="double-double" name="extra" type="radio" value="0">
+                <label for="double-double">Dupla-dupla</label>
+            </div>
+            <div> 
+                <input id="jalapeno" name="extra" type="radio" value="0">
+                <label for="jalapeno">Jalapeno</label>
+            </fieldset>
+            </div>
+        </form>
+    </div>
+
+    <div class="main-content">
+
+
+
+    </div>
 </body>
 
 </html>
