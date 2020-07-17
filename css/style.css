@@ -1,0 +1,85 @@
+
+ @font-face {
+     font-family: "amatic";
+     src: url("..\fonts\AmaticSC-Regular.ttf");
+     font-weight: 500;
+     }
+
+@font-face {
+
+   
+     font-family:"dancing", sans-serif;
+     src: url("..\fonts\static\DancingScript-Regular.ttf");
+     font-weight: 500;
+}
+
+ 
+ 
+ body{
+     margin: 0;
+     padding:0;
+     font-family: "dancing"sans-serif;
+     font-size: larger;
+     color: black
+     
+     
+ }
+
+
+.menu-div ul { 
+
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow:hidden;
+         background-color: #34BFCA;
+         text-align: center;
+         font-size: 25px;
+}
+
+.menu-div li {
+    display: inline-block;
+    margin: 10px;
+    margin-left: 80px;
+
+
+}
+
+.menu-div a { 
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none 
+    
+
+}
+
+.menu-div li a:hover {
+    background-color: pink;
+}
+
+h1 {
+    text-align: center;
+
+}
+.maincontent {
+
+    font-weight: 20px;
+    line-height: 30px;
+    margin: 20px;
+}
+
+.openhours {
+    margin: 20px;
+
+}
+
+table {
+    width: 100%;
+}
+
+table.openhours-table {
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto; }
