@@ -8,7 +8,7 @@ body {
       font-weight: bold;
   }
   h2 {
-    font-size: 32px;
+    font-size: 27px;
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
@@ -18,7 +18,7 @@ body {
     margin-bottom: 30px;
   }
   h4 {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 1.375em;
     color: #303030;
     font-weight: 400;
@@ -26,8 +26,7 @@ body {
   }
   tr {
     border-top:hidden;
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
   }
 
   .jumbotron {
@@ -165,6 +164,7 @@ body {
 
   #p1{
       font-weight: 600;
+      font-size: 18px;
   }
   
   #p2 {
