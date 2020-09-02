@@ -2,298 +2,41 @@
 <html lang="en">
 
 <head>
-    <title>Genovéva Burger</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/style.css" class="src">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/c55570d03a.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage">Logo</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about"> RÓLUNK</a></li>
-                    <li><a href="#services">SZOLGÁLTATÁSOK</a></li>
-                    <li><a href="#products">ÉTELEK</a></li>
-                    <li><a href="#pictures">KÉPEK</a></li>
-                    <li><a href="#contact">KAPCSOLAT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="jumbotron text-center">
-        <h1>Genovéva Burger</h1>
-        <p id="p1">Legjobb a városban!</p>
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
 
-    <!-- Container (About Section) -->
-    <div id="about" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>Rólunk</h2><br>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</h4><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#contact"><button class="btn btn-default btn-lg"> Ha kérdése van</button></a><br>
-            </div>
-            <div class="col-sm-4">
-                <i class="fas fa-hamburger logo slideanim"></i>
-            </div>
+    <div class="result">
+        <p>Paper covers rock. You win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="r">
+            <img src="img/icons8-hand-rock-96.png" alt="">
+        </div>
+        <div class="choice" id="p">
+            <img src="img/icons8-hand-96.png" alt="">
+        </div>
+        <div class="choice" id="s">
+            <img src="img/icons8-hand-scissors-96.png" alt="">
         </div>
     </div>
 
-    <div class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-globe logo slideanim"></span>
-            </div>
-            <div class="col-sm-8">
-                <h2>Értékeink</h2><br>
-                <h4></h4>MISSION: Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-                <p>VISION: Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Container (Services Section) -->
-    <div id="services" class="container-fluid text-center">
-        <h2>Szolgáltatások</h2>
-        <p id="p2">Élvezze a házi ízeket, saját készítésű 3x kelesztett buci, saját készítésű szósz!</p>
-        <p id="p2"> Csak friss, természetes és egészséges alapanyagokból!</p>
-        <p id="p2">Gluténmentes hamburgerek csak nálunk!</p>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <i class="fas fa-utensils logo-small"></i>
-                <h4>MINŐSÉG</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-heart logo-small"></span>
-                <h4>SZERETETTEL</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-user logo-small"></span>
-                <h4>ÜGYFÉLKÖZPONT</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-        </div>
-        <div class="row slideanim">
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-leaf logo-small"></span>
-                <h4>EGÉSZSÉG</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-certificate logo-small"></span>
-                <h4>TESZTELT</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-            <div class="col-sm-4">
-                <span class="glyphicon glyphicon-wrench logo-small"></span>
-                <h4 style="color:#303030;">KEMÉNY MUNKA</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Container (Portfolio Section) -->
-    <div id="products" class="container-fluid text-center bg-grey">
-        <h2>Ételek</h2><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <div class=table-responsive>
-                        <table class="table table-borderless">
-                            <tbody>
-                                <tr>
-                                    <td>Classic</td>
-                                    <td>1290,-Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>Sajtburger</td>
-                                    <td>1390,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>Dupla Sajtburger</td>
-                                    <td>1490,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>Csípős</td>
-                                    <td>1390,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>Csirkés</td>
-                                    <td>1290,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>Hawaii</td>
-                                    <td>1390,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>Texas</td>
-                                    <td>1590,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>New York</td>
-                                    <td>1590,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>San Francisco</td>
-                                    <td>1590,- Ft</td>
-                                </tr>
-                                <tr>
-                                    <td>Paris</td>
-                                    <td>1590,- Ft</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-    <!-- Container (Pictures Section) -->
-    <div id="pictures" class="container-fluid">
-        <div class="text-center">
-            <h3>Burgerek</h3>
-            <div class="row text-center slideanim">
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img/burger-1.jpg" alt="burger1" width="400" height="300">
-                        <p>Paris </p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img/burger01-1.jpg" alt="burger2" width="400" height="300">
-                        <p>New York</p>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="thumbnail">
-                        <img src="img/burger03-1.jpg" alt="menu" width="400" height="300">
-                        <p>San Francisco</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <h2>Vásárlók mondták</h2>
-            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice
-                                President,
-                                Comment Box</span></h4>
-                    </div>
-                    <div class="item">
-                        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-                    </div>
-                    <div class="item">
-                        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor,
-                                FriendsAlot</span></h4>
-                    </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- Container (Contact Section) -->
-    <div id="contact" class="container-fluid bg-grey">
-        <h2 class="text-center">KAPCSOLAT</h2>
-        <div class="row">
-            <div class="col-sm-5">
-                <p>Írj nekünk üzenetet és válaszolunk 24 órán belül.</p>
-                <p><span class="glyphicon glyphicon-map-marker"></span> Győr, HU</p>
-                <p><span class="glyphicon glyphicon-phone"></span> +36 30 884 3869</p>
-                <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-            </div>
-            <div class="col-sm-7 slideanim">
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="name" name="name" placeholder="Név" type="text" required>
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-                    </div>
-                </div>
-                <textarea class="form-control" id="comments" name="comments" placeholder="Üzenet"
-                    rows="5"></textarea><br>
-                <div class="row">
-                    <div class="col-sm-12 form-group">
-                        <button class="btn btn-default pull-right" type="submit">Küldés</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <footer class="container-fluid text-center">
-        <a href="#myPage" title="To Top">
-            <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
-        <p>Website By Dániel Máté</a>
-        </p>
-    </footer>
-
-    <script src="js/main.js"></script>
-
+    <p id="action-message">Make your move.</p>
+    <script src="app.js"></script>
 </body>
 
 </html>
